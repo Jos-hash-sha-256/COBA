@@ -5,6 +5,7 @@
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-green)
 
 Sitio web no oficial del Colegio de Bachilleres.
+https://jos-hash-sha-256.github.io/COBA/
 ## 🚀 Características principales
 
 - ✅ Diseño responsivo (mobile-first)
