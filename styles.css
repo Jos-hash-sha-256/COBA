@@ -1,0 +1,336 @@
+
+body {
+  background-color: #d1b787;
+  background-image: url('assets/fondo.jpg'); /* Asegúrate que la ruta sea correcta */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.navbar {
+  background-color: #582671;
+  padding: 10px 0; /* Ajuste ligero del padding */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: #fff; 
+  font-weight: bold;
+  font-size: 1.5rem; 
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #eee; 
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #d1b787; 
+}
+
+.navbar-nav .nav-link.active {
+  color: #d1b787; 
+  font-weight: bold;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+header {
+  background-size: cover;
+  background-position: center;
+  height: 400px; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+body.page-index header { background-image: url('assets/banner.jpg'); }
+body.page-acerca header { background-image: url('assets/banner-acerca.jpg'); }
+body.page-historia header { background-image: url('assets/banner-historia.jpg'); }
+body.page-oferta header { background-image: url('assets/banner-oferta.jpg'); }
+body.page-paraescolares header { background-image: url('assets/banner-paraescolares.jpg'); }
+
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(88, 38, 113, 0.7);
+  z-index: 1;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2; 
+  padding: 20px;
+}
+
+.school-logo {
+  max-height: 120px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+}
+
+.header-content h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.header-content p {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.contenido {
+  padding: 50px 20px;
+  text-align: center;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.85); 
+  margin: 40px auto;
+  border-radius: 15px;
+  max-width: 1140px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+  opacity: 0; 
+  transform: translateY(20px);
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(88, 38, 113, 0.15);
+}
+
+.about-card {
+    border-top: 4px solid #582671;
+}
+.value-item { 
+    border-left: 4px solid #d1b787;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+
+.programa-card {
+    border-top: 4px solid #582671;
+}
+.programa-title {
+    color: #582671;
+    border-bottom: 1px solid #d1b787;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.programa-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+.programa-list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+.programa-list li::before {
+    content: "•";
+    color: #d1b787;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+.actividad-card {
+    overflow: hidden;
+    border: 1px solid rgba(88, 38, 113, 0.1);
+}
+.actividad-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.actividad-body {
+    padding: 20px;
+}
+.actividad-title {
+    color: #582671;
+    margin-bottom: 15px;
+}
+.actividad-footer {
+    background-color: rgba(88, 38, 113, 0.05);
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid rgba(88, 38, 113, 0.1);
+}
+.beneficio-item {
+    border-bottom: 3px solid #d1b787;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px; 
+    margin: 30px auto; 
+    max-width: 800px; 
+}
+.timeline::before { 
+    content: '';
+    position: absolute;
+    left: 20px; 
+    top: 10px; 
+    bottom: 10px;
+    width: 3px;
+    background-color: #582671;
+    border-radius: 2px;
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+.timeline-item:last-child {
+    margin-bottom: 0; 
+}
+.timeline-date { 
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    transform: translateX(-50%); 
+    margin-left: 21.5px; 
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #582671;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    border: 3px solid #d1b787; 
+    z-index: 1; 
+}
+.timeline-content { 
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #d1b787; 
+    text-align: left; 
+}
+
+/* Footer */
+footer {
+  background-color: #582671;
+  color: white;
+  padding: 25px 0; 
+  text-align: center;
+  margin-top: auto; 
+}
+
+footer p {
+    margin-bottom: 0; 
+}
+
+@media (max-width: 992px) {
+    .header-content h1 {
+        font-size: 2.4rem;
+    }
+    .header-content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 350px;
+  }
+  .header-content h1 {
+      font-size: 2rem;
+  }
+   .header-content p {
+        font-size: 1rem;
+    }
+  .school-logo {
+    max-height: 80px;
+  }
+  .contenido {
+    margin: 20px;
+    padding: 30px 15px;
+  }
+  
+   .timeline {
+        padding-left: 60px; 
+   }
+   .timeline::before {
+        left: 30px;
+   }
+   .timeline-date {
+       left: 30px;
+       transform: translateX(-50%);
+       margin-left: 0; 
+       width: 40px;
+       height: 40px;
+       font-size: 0.8em;
+   }
+   .timeline-content {
+       margin-left: 15px; 
+   }
+}
+
+@media (max-width: 576px) {
+     .navbar-brand {
+        font-size: 1.3rem;
+     }
+     header {
+        height: 300px;
+     }
+     .header-content h1 {
+        font-size: 1.8rem;
+     }
+      .header-content p {
+        font-size: 0.9rem;
+    }
+     .school-logo {
+        max-height: 60px;
+     }
+     .value-item, .beneficio-item {
+         text-align: center;
+     }
+}
